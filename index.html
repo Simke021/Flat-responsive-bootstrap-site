@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Flat Responsive Bootstrap Website</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="#" class="navbar-brand"><img src="img/bunny.png" alt="logo" width="55px"></a>
+            </div><!-- end of navbar header -->
+
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#feature">Feature</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#connect">Connect</a></li>
+                </ul>
+            </div><!-- end of navbar collapse -->
+        </div><!-- end of conatiner -->
+    </nav><!-- end of nav -->
+
+    <div id="home">
+        <img src="img/desktop.png" alt="Desktop" class="banner">
+    </div><!-- end of home -->
+
+    <div id="about" class="container-fluid text-center">
+        <h1>Welcome to my website</h1>
+        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit eos ea vitae vero aspernatur minus voluptates reprehenderit nobis fuga consectetur!</h3>
+        <br><br>
+        <div class="row">
+            <div class="col-md-6">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nulla blanditiis quidem! Impedit modi ipsum rem nostrum itaque quasi ullam labore aliquam optio recusandae atque repudiandae explicabo, assumenda consectetur facere sed! Cumque totam, tempore quaerat quam rerum consequatur nostrum sapiente?</p>
+            </div>
+            <div class="col-md-6">
+                <img src="img/code.png" alt="Code" id="code">
+            </div>
+        </div><!-- end of row -->
+        <br>
+        <h3><i>"Lorem ipsum dolor sit, amet consectetur." -  Aleksandar</i></h3>
+    </div><!-- end of container -->
+    
+    <img src="img/charts.png" alt="Charts" class="banner">
+
+    <div id="feature" class="container-fluid text-center">
+        <h2>Get to know our Features</h2>
+        <div class="row">
+            <div class="col-sm-4">
+                <img src="img/html5.png" alt="HTML5" id="icon">
+                <h3>HTML5</h3>
+            </div>
+            <div class="col-sm-4">
+                <img src="img/bootstrap.png" alt="BOOTSTRAP" id="icon">
+                <h3>BOOTSTRAP</h3>
+            </div>
+            <div class="col-sm-4">
+                <img src="img/css3.png" alt="CSS3" id="icon">
+                <h3>CSS3</h3>
+            </div>
+        </div><!-- end of row -->
+            <br><br>
+            <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim provident adipisci dolores nam deleniti exercitationem veritatis aperiam quis, odio eos quibusdam ea. Autem eius magni tenetur praesentium beatae veritatis aliquid nam optio laudantium dolorem eos.</h3>        
+    </div><!-- end of container -->
+
+    <img src="img/people.png" alt="People" class="banner">
+
+    <div id="portfolio" class="container-fluid text-center">
+        <h2>Check out my Portfolio</h2>
+        <br><br>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="img/icons/camera.png" alt="Camera" id="icon">
+            </div>
+            <div class="col-md-4">
+                <img src="img/icons/mic.png" alt="Mic" id="icon">
+            </div>
+            <div class="col-md-4">
+                <img src="img/icons/phone.png" alt="Phone" id="icon">
+            </div>
+
+            <div class="col-md-4 hidden-sm hidden-xs">
+                <img src="img/icons/calendar.png" alt="Calendar" id="icon">
+            </div>
+            <div class="col-md-4 hidden-sm hidden-xs">
+                <img src="img/icons/tv.png" alt="Tv" id="icon">
+            </div>
+            <div class="col-md-4 hidden-sm hidden-xs">
+                <img src="img/icons/clock.png" alt="Clock" id="icon">
+            </div>
+        </div><!-- end of row -->
+    </div><!-- end of container -->
+
+    <img src="img/social.png" alt="Social" class="banner">
+
+    <footer id="connect" class="container-fluid text-center">
+        <div class="row">
+            <h2>Connect</h2>
+            <div class="social">
+                <a href="https://www.facebook.com/aleksandar.ljubisic" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/SimkeNS" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div><!-- end of social -->
+        </div><!-- end of row -->
+    </footer><!-- end of container -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script src="scrolling.js"></script>
+    <script type="text/javascript">
+        $(document).on('click','.navbar-collapse.in',function(e) {
+       if( $(e.target).is('a') && ( $(e.target).attr('class') != 'dropdown-toggle' ) ) {
+           $(this).collapse('hide');
+       }
+       });
+    </script>
+</body>
+</html>
+
